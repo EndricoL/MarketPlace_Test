@@ -56,17 +56,17 @@ export default function BuyerDetail() {
   }
 
   return (
-    <div
-  style={{
-    padding: '20px',
-    backgroundColor: '#fff',
-    borderRadius: '8px',
-    minHeight: '100vh',
-    width: '100%',
-    boxSizing: 'border-box',
-    overflowX: 'hidden',
-  }}
->
+  <div
+    style={{
+      padding: '20px',
+      backgroundColor: '#fff',
+      borderRadius: '8px',
+      minHeight: '100vh',
+      width: '100%',
+      boxSizing: 'border-box',
+      overflowX: 'hidden',
+    }}
+  >
   <h1 style={{ color: '#40E0D0', fontSize: '32px', fontWeight: 'bold', marginBottom: '20px' }}>
     Halaman Detail
   </h1>
@@ -86,7 +86,7 @@ export default function BuyerDetail() {
   >
     {/* Gambar */}
     <div style={{ flex: '1', maxWidth: '250px' }}>
-      <Image
+      <img
         src={product.image_url}
         alt={product.name}
         style={{ width: '100%', borderRadius: '8px' }}

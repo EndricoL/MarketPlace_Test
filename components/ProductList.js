@@ -38,59 +38,17 @@ export default function ProductList({ products, onRefresh }) {
   }
 
   return (
-    // <section>
-    //   <h2>Daftar Produk</h2>
-    //   <ul>
-    //     {products.map((product) => (
-    //       <li key={product.id}>
-    //         {editProduct?.id === product.id ? (
-    //           <div>
-    //             <input
-    //               name="name"
-    //               value={form.name}
-    //               onChange={handleChange}
-    //               placeholder="Nama Produk"
-    //             />
-    //             <input
-    //               name="image_url"
-    //               value={form.image_url}
-    //               onChange={handleChange}
-    //               placeholder="URL Gambar"
-    //             />
-    //             <textarea
-    //               name="description"
-    //               value={form.description}
-    //               onChange={handleChange}
-    //               placeholder="Deskripsi"
-    //             />
-    //             <button onClick={handleSave}>Simpan</button>
-    //             <button onClick={handleCancel}>Batal</button>
-    //           </div>
-    //         ) : (
-    //           <div>
-    //             <strong>{product.name}</strong> — {product.description}
-    //             <br />
-    //             <img src={product.image_url} alt={product.name} width="100" />
-    //             <br />
-    //             <button onClick={() => handleEdit(product)}>Edit</button>
-    //             <button onClick={() => handleDelete(product.id)}>Hapus</button>
-    //           </div>
-    //         )}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </section>
     <section style={{ padding: '20px' }}>
-  <h2 style={{ fontSize: '24px', color: '#fff' }}>Daftar Produk</h2>
-  <ul
-    style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(7, 1fr)', // 7 kolom
-      gap: '15px', // Menyesuaikan jarak antar item
-      listStyleType: 'none',
-      padding: 0,
-    }}
-  >
+    <h2 style={{ fontSize: '24px', color: '#fff' }}>Daftar Produk</h2>
+    <ul
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(7, 1fr)', // 7 kolom
+        gap: '15px', // Menyesuaikan jarak antar item
+        listStyleType: 'none',
+        padding: 0,
+      }}
+    >
     {products.map((product) => (
       <li
         key={product.id}

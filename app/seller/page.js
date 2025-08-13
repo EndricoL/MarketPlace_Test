@@ -82,7 +82,7 @@ export default function SellerDashboard() {
           {products.map(p => (
             <tr key={p.inventory_id || p.id} style={{ backgroundColor: '#333', borderBottom: '1px solid #444' }}>
               <td style={{ padding: '10px' }}>
-                <Image src={p.image_url} alt={p.name} width="50" style={{ borderRadius: '5px' }} />
+                <img src={p.image_url} alt={p.name} width="50" style={{ borderRadius: '5px' }} />
               </td>
               <td style={{ padding: '10px' }}>{p.name}</td>
               <td style={{ padding: '10px' }}>{p.description}</td>

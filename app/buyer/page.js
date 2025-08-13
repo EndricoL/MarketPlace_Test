@@ -173,7 +173,7 @@ export default function BuyerPage() {
                   textAlign: 'center',
                 }}
               >
-                <Image
+                <img
                   src={p.image_url}
                   alt={p.name}
                   style={{ maxWidth: '150px', borderRadius: '8px', marginBottom: '10px' }}
@@ -232,7 +232,7 @@ export default function BuyerPage() {
                     color: '#888'
                   }}
                 >
-                  <Image
+                  <img
                     src={item.product?.image_url}
                     alt={item.product?.name}
                     width="50"

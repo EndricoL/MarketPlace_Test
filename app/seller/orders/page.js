@@ -87,7 +87,7 @@ export default function ManageOrders() {
               border: '1px solid #eee'
             }}
           >
-            <Image
+            <img
               src={item.product.image_url}
               alt={item.product.name}
               width="50"
