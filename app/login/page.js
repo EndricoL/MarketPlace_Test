@@ -55,22 +55,6 @@ export default function LoginPage() {
   }
 
   return (
-    // <div style={{ padding: '20px' }}>
-    //   <h1>Login</h1>
-    //   <form onSubmit={handleSubmit}>
-    //     <div>
-    //       <label>Email: </label>
-    //       <input type="email" name="email" value={formData.email} onChange={handleChange} />
-    //     </div>
-    //     <div>
-    //       <label>Password: </label>
-    //       <input type="password" name="password" value={formData.password} onChange={handleChange} />
-    //     </div>
-    //     <button type="submit">Login</button>
-    //   </form>
-
-    //   {message && <p>{message}</p>}
-    // </div>
     <div style={{
       padding: '40px',
       backgroundColor: '#fff',
@@ -148,7 +132,7 @@ export default function LoginPage() {
 
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
       <p style={{ fontSize: '14px', color: '#555' }}>
-        Don't have an account? 
+        {`Don't have an account?`} 
         <a href="/register" style={{ color: '#40E0D0', textDecoration: 'none' }}> Register</a>
       </p>
     </div>

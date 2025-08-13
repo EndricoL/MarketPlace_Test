@@ -56,29 +56,6 @@ export default function BuyerDetail() {
   }
 
   return (
-    // <div style={{ padding: '20px' }}>
-    //   <h1>Halaman Detail</h1>
-    //   <h1>{product.name}</h1>
-    //   <img src={product.image_url} alt={product.name} width="300" />
-    //   <p>{product.description}</p>
-    //   <p>Harga: Rp {product.price}</p>
-    //   <p>Stock tersedia: {product.stock}</p>
-
-    //   <div>
-    //     <label>Jumlah:</label>
-    //     <input
-    //       type="number"
-    //       min="1"
-    //       max={product.stock}
-    //       value={qty}
-    //       onChange={handleQtyChange}
-    //     />
-    //   </div>
-
-    //   <button style={{ marginTop: '10px' }} onClick={handleBuy}>
-    //     Beli
-    //   </button>
-    // </div>
     <div
   style={{
     padding: '20px',
@@ -109,7 +86,7 @@ export default function BuyerDetail() {
   >
     {/* Gambar */}
     <div style={{ flex: '1', maxWidth: '250px' }}>
-      <img
+      <Image
         src={product.image_url}
         alt={product.name}
         style={{ width: '100%', borderRadius: '8px' }}
